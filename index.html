@@ -1,0 +1,85 @@
+<!DOCTYPE html lang="en">
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zero-In Content Call Organizer</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" type="text/css" href="css/normalize.css"> 
+    <Add normalize css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+</head>
+
+	<body>
+		<header>
+			<img src="img/Zero-In-Logo.png">
+			<div class="topbuttons">
+				<button id="save">Save</button>
+				<button id="delete">Delete</button>
+			</div>
+		</header>
+
+		<div id="wrapper">
+			<div class="hero">
+				<input type="text" Id="client" placeholder="Client Name">
+				<input type="text" Id="client" placeholder="Project#">
+				<h1>| Content Kick-Off Call |</h1>
+			</div>
+
+			<div class="add">
+				<a href="#">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+				</a>
+			</div>
+
+			<div class="innerwrapper">
+				<div class="form">
+					<div class="scripts">
+						<h3>Scripts</h3>
+						<form action="form_action.asp">
+								<select name="selectAddOns" multiple>
+									<option></option>
+									<option value="news">News</option>
+						   		 	<option value="weather">Weather</option>
+							      	<option value="facebook">Facebook</option>
+								  	<option value="twitter">Twitter</option>
+									<option value="instagram">Instagram</option>
+								</select>
+								<br>
+								<input type="submit" id="submit">
+						</form>
+					</div>
+
+					<div class="info">
+						<h3>Location: <input type="text" Id="location"></h3>
+						<h3>Type Of Content: <input type="text" Id="content"></h3>
+						<h3 class="clearfix">Display:
+								<select id="display" data-placeholder="Display">
+									  <option></option>
+									  <option value="Landscape">Landscape</option>
+									  <option value="portrait">Portrait</option>
+								</select>
+						</h3>
+						<h3>Playlist Type: <input type="text" Id="playlist"></h3>
+						<h3>Orientation: <input type="text" Id="layout"></h3>
+						</div>
+
+					<div class="preview">
+						<button id="generate">Generate Preview
+						</button>
+						<div id="preview">
+							<div class="portrait"></div>
+							<div class="landscape"></div>
+						</div>
+					</div>
+				</div>
+			</div> <!--  class="wrapper"> -->
+		</div> <!--  class="wrapper"> -->
+
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+	<script type="text/javascript" src="js/project.js"></script>
+	</body>
+</html>
