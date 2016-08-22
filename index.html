@@ -15,14 +15,15 @@
 	<body>
 		<header>
 			<img src="img/Zero-In-Logo.png">
-			<div class="topbuttons">
-				<button id="save">Save</button>
-				<button id="delete">Delete</button>
-			</div>
 		</header>
 
 		<div id="wrapper">
+
 			<div class="hero">
+				<div class="topbuttons">
+					<button id="save">Save</button>
+					<button id="delete">Delete</button>
+				</div>
 				<input type="text" Id="client" placeholder="Client Name">
 				<input type="text" Id="client" placeholder="Project#">
 				<h1>| Content Kick-Off Call |</h1>
@@ -30,7 +31,7 @@
 
 			<div class="add">
 				<a href="#">
-					<i class="fa fa-plus" aria-hidden="true"></i>
+					<button id="newform"><i class="fa fa-plus" aria-hidden="true"> Add</i></button>
 				</a>
 			</div>
 
@@ -70,12 +71,15 @@
 						<button id="generate">Generate Preview
 						</button>
 						<div id="preview">
-							<div class="portrait"></div>
-							<div class="landscape"></div>
+							<div class="portrait, current">
+							</div>
+							<div class="landscape">
+								<div class="horizontalline"></div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div> <!--  class="wrapper"> -->
+				</div> <!-- class="form"> -->
+			</div> <!--  class="innerwrapper"> -->
 		</div> <!--  class="wrapper"> -->
 
 	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
