@@ -1,4 +1,5 @@
-window.formHTML = '<div class="form">' +
+window.formhtmltemplate = function(){
+	var html = '<div class="form">' +
 	'<div class="scripts">' +
 		'<h3>Scripts</h3>' +
 		'<form action="form_action.asp">' +
@@ -16,7 +17,7 @@ window.formHTML = '<div class="form">' +
 	'</div>' +
 
 	'<div class="info">' +
-		'<h3>Location: <input type="text" Id="location"></h3>' +
+		'<h3>Location: <input typtext" Id="location"></h3>' +
 		'<h3>Type Of Content: <input type="text" Id="content"></h3>' +
 		'<h3 class="clearfix">Display:' +
 				'<select id="display" data-placeholder="Display">' +
@@ -38,3 +39,6 @@ window.formHTML = '<div class="form">' +
 		'</div>' +
 	'</div>' +
 '</div>';
+return html;
+};
+
