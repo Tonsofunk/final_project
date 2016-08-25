@@ -1,4 +1,4 @@
-window.formhtmltemplate = function(){
+window.formHtmlTemplate = function(){
 	var html = '<div class="form">' +
 	'<div class="scripts">' +
 		'<h3>Scripts</h3>' +
@@ -12,7 +12,8 @@ window.formhtmltemplate = function(){
 					'<option value="instagram">Instagram</option>' +
 				'</select>' +
 				'<br>' +
-				'<input type="submit" id="submit">' +
+				'<button id="submit">Submit' +
+				'</button>' +
 		'</form>' +
 	'</div>' +
 
@@ -27,15 +28,15 @@ window.formhtmltemplate = function(){
 				'</select>' +
 		'</h3>' +
 		'<h3>Playlist Type: <input type="text" Id="playlist"></h3>' +
-		'<h3>Orientation: <input type="text" Id="layout"></h3>' +
+		'<h3>Design: <input type="text" Id="layout"></h3>' +
 		'</div>' +
 
 	'<div class="preview">' +
 		'<button id="generate">Generate Preview' +
 		'</button>' +
 		'<div id="preview">' +
-			'<div class="portrait"></div>' +
-			'<div class="landscape"></div>' +
+			'<div class="portrait"><img src="img/portrait.jpg"></div>' +
+			'<div class="landscape"><img src="img/BLOOMBERG.jpg"></div>' +
 		'</div>' +
 	'</div>' +
 '</div>';
