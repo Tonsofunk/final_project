@@ -1,45 +1,52 @@
 window.formHtmlTemplate = function(){
-	var html = '<div class="form">' +
-	'<div class="scripts">' +
-		'<h3>Scripts</h3>' +
-		'<form action="form_action.asp">' +
+	var html = '<form class="form">' +
+	'<div class="clearfix">' +	
+		'<div class="form_right">' +
+			'<div class="form_row">' +
+				'<label>Scripts</label>' +
 				'<select name="selectAddOns" multiple>' +
 					'<option></option>' +
+					'<option value="website">Web Feeds(ex. rates)</option>' +
 					'<option value="news">News</option>' +
 		   		 	'<option value="weather">Weather</option>' +
 			      	'<option value="facebook">Facebook</option>' +
 				  	'<option value="twitter">Twitter</option>' +
 					'<option value="instagram">Instagram</option>' +
 				'</select>' +
-				'<br>' +
-				'<button id="submit">Submit' +
-				'</button>' +
-		'</form>' +
-	'</div>' +
-
-	'<div class="info">' +
-		'<h3>Location: <input typtext" Id="location"></h3>' +
-		'<h3>Type Of Content: <input type="text" Id="content"></h3>' +
-		'<h3 class="clearfix">Display:' +
-				'<select id="display" data-placeholder="Display">' +
-					  '<option></option>' +
-					  '<option value="Landscape">Landscape</option>' +
-					  '<option value="portrait">Portrait</option>' +
-				'</select>' +
-		'</h3>' +
-		'<h3>Playlist Type: <input type="text" Id="playlist"></h3>' +
-		'<h3>Design: <input type="text" Id="layout"></h3>' +
+			'</div>' +
 		'</div>' +
-
+		'<div class="form_left">' +
+			'<div class="form_row">' +
+				'<label>Location: <input typtext" Id="location"></label>' +
+			'</div>' +
+			'<div class="form_row">' +
+				'<label>Type Of Content: <input type="text" Id="content"></label>' +
+			'</div>' +
+			'<div class="form_row">' +
+				'<label class="clearfix">Display:' +
+						'<select class="display" data-placeholder="Display">' +
+							  '<option></option>' +
+							  '<option value="landscape">Landscape</option>' +
+							  '<option value="portrait">Portrait</option>' +
+						'</select>' +
+				'</label>' +
+			'</div>' +
+			'<div class="form_row">' +
+				'<label>Playlist Type: <input type="text" class="playlist"></label>' +
+			'</div>' +
+			'<div class="form_row">' +
+				'<label>Design: <input type="text" class="layout"></label>' +
+			'</div>' +
+		'</div>' +
+	'</div>' +
 	'<div class="preview">' +
-		'<button id="generate">Generate Preview' +
-		'</button>' +
-		'<div id="preview">' +
-			'<div class="portrait"><img src="img/portrait.jpg"></div>' +
-			'<div class="landscape"><img src="img/BLOOMBERG.jpg"></div>' +
-		'</div>' +
-	'</div>' +
-'</div>';
+				'<div class="view">' +
+					'<input type="submit" class="generate" value="Generate Preview">' +
+					'<input type="submit" class="delete" value="Delete">' +
+				'</div>'	
+			'</div>' +
+'</form>';
 return html;
 };
+
 

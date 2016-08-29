@@ -9,9 +9,10 @@ html, body .wrapper {
   margin: 0;
 }
 
-img {
-  height: 80%;
-  width: 20%;
+.logo {
+  max-height: 100%;
+  max-width: 100%;
+  padding: .25%;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
     border: solid;
     border-radius: 5px;
   	margin: 0 auto;
+    overflow: hidden;
  }
 
  .hero {
@@ -62,7 +64,6 @@ body {
  }
 
  h3 {
-  margin: 2%;
   font-size: 2em;
  }
 
@@ -99,40 +100,25 @@ body {
   border: 4px black solid;
   border-radius: 25px;
 }
-
-.scripts, .info {
-  width: 50%;
-  height: 40%;
-}
-
-.scripts {
-  float: right;
-  clear: left;
-  display: inline;
-  text-align: center;
-  }
-
-  select {
-    width: 40%;
-    height:30%;
-    font-size: .75em;
-  }
-
-  #display {
-    width: 40%;
-    height: 15%;
-  }
-
-.info {
+.form_left {
   float: left;
-  display: inline;
+  width: 50%;
+  padding: 15px;
 }
 
-.preview {
+.form_right {
+  float: right;
+  width: 50%;
+  padding: 15px;
+}
+
+.form_row {
+  margin: 15px 0;
+}
+
+.form_row input,
+.form_row select {
   width: 100%;
-  height: 60%;
-  clear: both;
-  text-align: center;
 }
 
 .clearfix:after {
@@ -144,58 +130,27 @@ body {
      height: 0;
 }
 
-#view {
-  margin: 0 auto;
+/*.view {
+  float: right;
   clear: both;
-}
+}*/
 
-#generate {
+/*.generate {
   margin-top: 2.5%;
   font-size: 3em;
-}
-
-.portrait, .landscape {
-  /*border: 5px solid black;*/
-  display: inline-block;
-}
-
-.portrait {
-  width: 100%;
-  height: 90%;
-  margin-top: 1.5%;
-  margin-bottom: 1.5%;
-  /*background-image: url("../img/portrait.jpg");*/
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  background-size: 100% 100%;
-  display: ;
-}
-
-.landscape {
-  width: 55%;
-  height: 75%;
-  margin-top: 1%;
-  background-image: url("../img/BLOOMBERG.jpg");
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  display: none;
-}
-
-.horizantalline {
-  height: 100%;
-  width: 5%;
-  background-color: rgba(0,0,0,.7);
-  right: 0;
-
-}
+}*/
 
 .current {
   display: show;
 }
 
+.preview {
+  text-align: center;
+  margin: 15px, 0;
+}
 /*background-color: rgba(0,0,0,.7);*/
 
-@media only screen and (max-width: 1280px){
+/*@media only screen and (max-width: 1280px){
   .wrapper, .innerwrapper, .form {
     width: 32.333%;
   }
@@ -206,7 +161,7 @@ body {
 }
 
 @media only screen and (max-width: 800px){
-  .wrapper, .innerwrapper, .form {
+   .innerwrapper, .form {
     width: 49%;
   }
 
@@ -229,3 +184,4 @@ body {
 
 }
 
+*/
