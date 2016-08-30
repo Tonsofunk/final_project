@@ -17,10 +17,10 @@ window.formHtmlTemplate = function(){
 		'</div>' +
 		'<div class="form_left">' +
 			'<div class="form_row">' +
-				'<label>Location: <input typtext" Id="location"></label>' +
+				'<label>Location: <input type="text" class="location"></label>' +
 			'</div>' +
 			'<div class="form_row">' +
-				'<label>Type Of Content: <input type="text" Id="content"></label>' +
+				'<label>Type Of Content: <input type="text" class="content"></label>' +
 			'</div>' +
 			'<div class="form_row">' +
 				'<label class="clearfix">Display:' +
@@ -35,16 +35,16 @@ window.formHtmlTemplate = function(){
 				'<label>Playlist Type: <input type="text" class="playlist"></label>' +
 			'</div>' +
 			'<div class="form_row">' +
-				'<label>Design: <input type="text" class="layout"></label>' +
+				'<label>Channel Layout: <input type="text" class="layout"></label>' +
 			'</div>' +
 		'</div>' +
 	'</div>' +
 	'<div class="preview">' +
-				'<div class="view">' +
-					'<input type="submit" class="generate" value="Generate Preview">' +
-					'<input type="submit" class="delete" value="Delete">' +
-				'</div>'	
-			'</div>' +
+		'<div class="view">' +
+			'<input type="submit" class="generate" value="Generate Preview">' +
+			'<input type="submit" class="delete" value="Delete">' +
+		'</div>'	
+	'</div>' +
 '</form>';
 return html;
 };

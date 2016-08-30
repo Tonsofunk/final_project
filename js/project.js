@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-    $('select').select2();
-
     $( "body" ).on('click', '.add', function(event) {
         event.preventDefault();
         $(".innerwrapper").append(window.formHtmlTemplate);
@@ -24,24 +22,23 @@ $(document).ready(function(){
             
             if (option == "")
                 alert("Please decide DISPLAY type.");
-                // console.log($('option value').val());
     });
 
-    $(".delete").click(function(){
-    alert("The paragraph was clicked.");
+    $( "body" ).on('click', '.delete', function(event) {
+        event.preventDefault();
+        $(".preview img").last().remove();
     });
-
-    $("input.delete").find();
-    console.log("input.delete");
 
     $("body").keypress(function(e) {
         if (e.which == '13') {
             e.preventDefault();
             }
     });
-        //$("<input>", ".delete").on('submit', 'form', function(event){
-          //  $(".preview img").remove();
-       //});
+
+    $('.datepicker').pickadate({
+        weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+        showMonthsShort: true
+    })
 });
 
 

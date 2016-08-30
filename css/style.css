@@ -34,6 +34,12 @@ body {
     overflow: hidden;
  }
 
+ .innerwrapper img {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+ }
+
  .hero {
   margin-top: 1%;
   width: 100%;
@@ -74,9 +80,10 @@ body {
  }
 
 .add {
+  top: 400px;
   padding: 0, 10%;
   position: fixed;
-  }
+}
 
 #newform {
   width: 75px;
@@ -102,14 +109,21 @@ body {
 }
 .form_left {
   float: left;
-  width: 50%;
   padding: 15px;
+  width: 100%;
 }
 
 .form_right {
   float: right;
-  width: 50%;
-  padding: 15px;
+      padding: 15px;
+      width: 100%;
+}
+
+@media(min-width: 770px){
+  .form_right,
+  .form_left {
+    width: 50%;
+  }
 }
 
 .form_row {
@@ -130,15 +144,9 @@ body {
      height: 0;
 }
 
-/*.view {
-  float: right;
-  clear: both;
-}*/
-
-/*.generate {
-  margin-top: 2.5%;
-  font-size: 3em;
-}*/
+.notes {
+  margin-top: 20%;
+}
 
 .current {
   display: show;
@@ -148,40 +156,3 @@ body {
   text-align: center;
   margin: 15px, 0;
 }
-/*background-color: rgba(0,0,0,.7);*/
-
-/*@media only screen and (max-width: 1280px){
-  .wrapper, .innerwrapper, .form {
-    width: 32.333%;
-  }
-
-  .h1 {
-    font-size: 2em;
-  }
-}
-
-@media only screen and (max-width: 800px){
-   .innerwrapper, .form {
-    width: 49%;
-  }
-
-  #generate {
-    font-size: 2em;
-  }
-
-@media only screen and (max-width: 500px){
-  .wrapper ,.innerwrapper, .form {
-    width: 99%;
-  }
-
-  #generate {
-    font-size: 1em;
-  }
-
-  .topbuttons, .add {
-    position: fixed;
-  }
-
-}
-
-*/
